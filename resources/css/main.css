@@ -1,0 +1,77 @@
+* { margin: 0; padding: 0; outline: 0; border: 0; list-style: none; list-style-type: none; }
+body { background: #131313; font-family: 'Helvetica Neue', Helvetica, Arials, sans-serif; font-size: 14px; line-height: 18px; color: #171717;}
+
+.window { width: 100%; }
+.frame { width: 980px; margin: 0 auto; }
+.smallFrame { width: 600px; margin: 0 auto; }
+
+img { opacity: 0; filter:alpha(opacity=0); }
+
+h1 { font-size: 36px; line-height: 42px; }
+h2 { font-size: 28px; line-height: 32px; }
+h3 { font-size: 24px; line-height: 28px; }
+
+#question { background: #0c0c0c url('../img/header-bg.png') repeat-x; padding: 40px 0; }
+	#question h1 { color: #FFF; font-weight: 100;  }
+		#question h1 strong { font-weight: bold; }
+		
+#answer, #graph, #canvasHolder { padding-top: 20px; background: #FFF; }
+	.steps li { float: left; clear: both; border-bottom: 1px solid #f3f3f3; width: 100%; padding: 30px 0; }
+		.steps li h2, .window h2 { padding: 5px 10px; background: #171717; color: #FFF; font-weight: normal; float: left; margin-bottom: 14px;
+							-webkit-border-radius: 5px; -moz-border-radius: 5px; }
+		.steps li h3, .window h3 { clear: left; margin-bottom: 14px; }
+		.steps li p, .window p { margin-bottom: 14px; }
+			.source { background: #c1c6c6; color: #FFF; padding: 3px 5px; font-weight: bold; float: left; clear: left; 
+						-webkit-border-radius: 3px; -moz-border-radius: 3px; }
+				.source a { font-weight: 200; color: inherit; font-weight: bold; }
+					.source a:hover { text-decoration: none; color: #18485f; }
+
+.sizes { width: 600px; }
+	.sizes li { float: left; margin-right: 5px; overflow: hidden; line-height: 0; }
+		.sizes li:last-child { margin-right: none; }
+		.sizes li:hover { cursor:pointer; }
+		#img-small-holder { height: 53px; }
+		#img-medium-holder { height: 108px; }
+		#img-large-holder { height: 162px; }
+		.sizes li span { opacity: 0; filter:alpha(opacity=0); display: block; position: relative; }
+			#img-small { background: url('../img/image-size-small.jpg') no-repeat; width:96px; height: 54px; top: -107px; background-position: 0 -54px; }
+			#img-medium { background: url('../img/image-size-medium.jpg') no-repeat; width:192px; height: 108px; top: -216px; background-position: 0 -108px; }
+			#img-large { background: url('../img/image-size-large.jpg') no-repeat; width:288px; height: 162px; top: -324px; background-position: 0 -162px; }
+
+.floatingRightImage { padding: 5px; background: #FFF; border: 1px solid #F3F3F3; float: right; margin: 0 0 20px 20px; 
+						box-shadow: 0 0 5px rgba(0,0,0,.25); }
+				
+#canvas { margin: 40px 0; box-shadow: 0 0 40px #888;}
+	#canvas:hover { cursor:pointer; }
+
+#keep-going-message { width: 150px; height: 145px; background: url('../img/keep-going-graph-message-sm.png') no-repeat; text-indent: -99999px; display: block; 
+						position: relative; float: right; margin: 300px -200px 0 0; }
+	
+#browser-support { height: 30px; margin: 20px auto; width: 660px; }
+	#browser-support li { float: left; margin-right: 10px; width: 90px; text-align: center; }
+		#browser-support li:last-child { margin-right: none; }
+		#browser-support li img { margin: 0 auto; }
+
+#graph { padding: 20px 0;}
+#line-graph { margin-left: auto; margin-right: auto; margin-top: 20px; display: block; }
+	
+.italic { font-style:italic; }
+
+#nextPrevButtons { float: left; clear: both; margin: 50px 0 75px 0; display: block; }
+	.frame #nextPrevButtons { width: 980px; }
+	.smallFrame #nextPrevButtons { width: 600px; }
+.navigationButton { width: 170px; height: 58px; display: block; text-indent: -99999px; }
+	#next { float: right; }
+	#previous { float: left; }
+#next a { background: url('../img/next-previous-buttons.png') top left no-repeat; float: right; }
+	#next a:hover { background: url('../img/next-previous-buttons.png') -170px 0 no-repeat; }
+#previous a { background: url('../img/next-previous-buttons.png') 0 -58px; float: left; }
+	#previous a:hover { background: url('../img/next-previous-buttons.png') -170px -58px no-repeat; }
+	
+#footer { padding: 90px 0 120px 0; background: #131313; clear: both;}
+#footer h2 { font-size: 32px; color: #FFF; text-transform: uppercase; display: block; float: left; background: none; padding: 0; font-weight: bold;}
+	#footer span { color: #FFF; font-size: 14px; text-transform: uppercase;  margin-top: 0px; line-height: 20px; float: left; clear: left; display: block; }
+			
+/* floats et la clears */
+.floatLeft { float: left; } .floatRight { float: right; }
+.clearLeft { clear: left; } .clearRight { clear: right; } .clearBoth { clear: both; }

@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; outline: 0; border: 0; list-style: none; list-style-type: none; }
+body { background: #131313; font-family: 'Helvetica Neue', Helvetica, Arials, sans-serif; font-size: 14px; line-height: 18px; color: #171717;}
+
+.window { width: 100%; }
+.frame { width: 700px; margin: 0 auto; }
+
+img { opacity: 0; filter:alpha(opacity=0); }
+
+h1 { font-size: 36px; line-height: 42px; }
+h2 { font-size: 28px; line-height: 32px; }
+h3 { font-size: 24px; line-height: 28px; }
+
+#header { height: 360px; }
+
+#content { background: #c1c6c6 url('../img/home-content-bg.jpg') top right no-repeat; height: 971px; }
+	#logo { background: url('../img/adam-passey-logo.png') top left no-repeat; padding-top: 143px; padding-left: 140px; color: #131313; font-size: 64px; font-weight: 900;
+			text-transform: uppercase; line-height: 60px; }
+		#logo span { color: #8b8f8f; }
+#main-content { width: 600px; height: 691px; display: block; background: url('../img/home-primary-content-stroked.png') no-repeat;  margin-top: 25px; text-indent: -99999px;}
+
+#next { background: url('../img/next-previous-buttons.png') top left no-repeat; float: right; position: relative; display: block; width: 170px; height: 58px; text-indent: -99999px; margin-top: -180px; margin-right: 90px;  }
+	#next:hover { background: url('../img/next-previous-buttons.png') -170px 0 no-repeat; }
+
+#footer { padding: 90px 0 120px 0; }
+#footer h2 { font-size: 32px; color: #FFF; text-transform: uppercase; display: block; float: left; }
+	#footer span { color: #FFF; font-size: 14px; text-transform: uppercase;  margin-top: 0px; line-height: 20px; float: left; clear: left; display: block; }
+	
+.clearBoth { clear: both; }

@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Question #3</title>
+		
+		<link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
+		
+		<script type="text/javascript" src="../resources/js/jquery-1-2.3.2.min.js"></script>
+		<script type="text/javascript" src="chessboard-controller.js"></script>
+		<script type="text/javascript" src="../resources/js/primary-controller.js"></script>
+		
+	</head>
+	<body>
+	
+	<div id="question" class="window">
+		<div class="frame">
+			<h1><strong>3)</strong> What is the minimum number of moves required for a knight to cover the entire chess board? Write a program to prove it. Provide a graph with the move number on the x axis and the number of squares on the y axis.</h1>
+		</div>
+	</div>
+	
+	<div id="answer" class="window">
+		<div class="smallFrame">
+			<h2>63 Moves</h2>
+			<h3>The minimum number of moves required for a knight to cover an entire chessboard is 63.</h3>
+			<p class="italic">
+			    This is assuming the size of the chessboard is a typical 8x8, and the knight
+			    must move according to the rules of chess.
+			</p>
+			<p>
+			    Initially, I intended to create a brute force program that would continually try new, slightly varied
+			    routes until finding a route that touched every tile in only 63 moves. I shortly realized that the sheer number of route
+			    possibilities would complicate things. It may take hours or even days for a brute force program to 
+			    solve this kind of puzzle. I wanted to be able to show you (the IGN Code Foo Challenge Judge) that I 
+			    could write a program that could logically find a route that could touch every tile in just 63 moves-
+			    starting from any tile. The success rate has been averaged at approximately 98%.
+			</p>
+			<p id="demonstration-overview">
+			    This demonstration was built using the HTML5 Canvas tag and an in-development javascript-based game platform
+			    that I'm working on. And yes, I threw in some particle effects just for fun. Compatible with the following
+			    browsers:
+			</p>
+			<ul id="browser-support">
+			    <li>
+			    	<img src="../resources/img/logo-firefox.png" alt="logo-firefox" width="50" height="50" />
+			    	<h4>Firefox</h4>
+			    	<span>3.0+</span>
+			    </li>
+			    <li>
+			    	<img src="../resources/img/logo-safari.png" alt="logo-safari" width="44" height="50" />
+			    	<h4>Safari</h4>
+			    	<span>3.0+</span>
+			    </li>
+			    <li>
+			    	<img src="../resources/img/logo-chrome.png" alt="logo-chrome" width="52" height="50" />
+			    	<h4>Chrome</h4>
+			    	<span>3.0+</span>
+			    </li>
+			    <li>
+			    	<img src="../resources/img/logo-opera.png" alt="logo-opera" width="50" height="50" />
+			    	<h4>Opera</h4>
+			    	<span>10.0+</span>
+			    </li>
+			    <li>
+			    	<img src="../resources/img/logo-iphone.png" alt="logo-iphone" width="44" height="50" />
+			    	<h4>iPhone</h4>
+			    	<span>1.0+</span>
+			    </li>
+			    <li>
+			    	<img src="../resources/img/logo-droid.png" alt="logo-droid" width="44" height="50" />
+			    	<h4>Android</h4>
+			    	<span>1.0+</span>
+			    </li>
+			</ul>
+			<!-- 
+			<p>
+			    When I first read this challenge, I assumed we were meant to write a "brute force" program that 
+			    would attempt to determine the least amount of moves it would take to cover the entire board. But
+			    after some preparation, I realized that the sheer number of possibilities was so large that this type
+			    of program might take days to successfully determine a route that would touch every tile only once, 
+			    and cover the entire board in only 63 moves.
+			</p>
+			-->
+			<!-- 
+			<span class="source">
+			    source: 
+			    <a href="http://en.wikipedia.org/wiki/Knights_tour">http://en.wikipedia.org/wiki/Knights_tour &raquo;</a>
+			</span>
+			-->
+			<div class="clearBoth"></div>
+		</div>
+	</div>
+	
+	<div id="canvasHolder" class="window">
+		<div class="smallFrame">
+			<div id="keep-going-message">Keep going! There's a graph down there</div>
+			<canvas id="canvas" height="600" width="600">
+				<p>Your browser does not support canvas. :(</p>
+			</canvas>
+			<div class="clearBoth"></div>
+		</div>
+	</div>
+	
+	<div id="graph" class="window">
+		<div class="smallFrame">
+			<h2>The Graph</h2>
+			<h3>A line graph depicting the number of tiles and the number of moves.</h3>
+			<p>
+			    <span class="italic">Honestly, it wasn't extremely clear to me what I was supposed to graph. </span><br />
+			    Regardless, here's a simple graph depicting the number of moves on the x axis, and the number of tiles
+			    on the y axis. 
+			</p>
+
+			<img src="../resources/img/graph-simple.png" alt="graph-simple" width="476" height="477" id="line-graph" />
+			
+			<ul id="nextPrevButtons">
+				<li id="next"><a href="../4/index.html" class="navigationButton">Next &raquo;</a></li>
+				<li id="previous"><a href="../2/index.html" class="navigationButton">&laquo; Previous</a></li>
+			</ul>
+			
+			<div class="clearBoth"></div>
+		</div>
+	</div>
+	
+	<div id="footer" class="window">
+	    <div class="frame">
+	    	<h2>Everything</h2>
+	    	<span>
+	    		You see here was solely designed and developed by <img src="../resources/img/adam-passey-logo-white-sm.png" alt="adam-passey-logo-white-sm" width="163" height="56" /><br />
+	    		for the IGN Code Foo Challenge.
+	    	</span>
+	    	<div class="clearBoth"></div>
+	    </div>
+	</div>
+	
+	</body>
+</html>

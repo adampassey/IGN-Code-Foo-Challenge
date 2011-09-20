@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Question #1</title>
+		
+		<link rel="stylesheet" type="text/css" href="../resources/css/main.css" />
+		
+		<script type="text/javascript" src="../resources/js/jquery-1-2.3.2.min.js"></script>
+		<script type="text/javascript" src="../resources/js/primary-controller.js"></script>
+		
+	</head>
+	<body>
+	
+	<div id="question" class="window">
+		<div class="frame">
+			<h1><strong>1)</strong> How many pennies could you put on the Golden Gate Bridge without any of them overlapping? For this question, please write out each step in your thought process.</h1>
+		</div>
+	</div>
+	
+	<div id="answer" class="window">
+		<div class="smallFrame">
+			<ul class="steps">
+				<li>
+					<h2>Step One</h2>
+					<h3>Determine the dimensions of the Golden Gate Bridge.</h3>
+					<p>
+						The Golden Gate Bridge is 1.7 mi. long (2.7 km.), or 8,981 ft., and 90 ft. wide. 
+					</p>
+					<span class="source">
+						source: 
+					    <a href="http://en.wikipedia.org/wiki/Golden_gate_bridge">http://en.wikipedia.org/wiki/Golden_gate_bridge &raquo;</a>
+					</span>
+				</li>
+				<li>
+					<h2>Step Two</h2>
+					<h3>Determine the diameter of a penny.</h3>
+					<p>
+						The diameter of a penny is 19.05 mm., or 0.750 in.
+					</p>
+					<span class="source">
+						source:
+						<a href="http://en.wikipedia.org/wiki/Penny_(United_States_coin)">http://en.wikipedia.org/wiki/Penny_(United_States_coin) &raquo;</a>
+					</span>
+				</li>
+				<li>
+					<h2>Step Three</h2>
+					<h3>Drink some whiskey and/or beer.</h3>
+					<p>
+						Contrary to popular belief, the consumption of alcohol can actually
+						stimulate positive thinking traits in the human mind. It has also been
+						found that consuming large amounts of alcohol can increase critical thinking skills.
+						Drinking whiskey and/or beer at this point will help determine the steps to follow.
+					</p>
+				</li>
+				<li>
+					<h2>Step Four</h2>
+					<h3>Determine the most efficient penny "pattern."</h3>
+					<p>
+						<img src="../resources/img/pennies-grid.png" alt="pennies-grid" width="200" height="176" class="floatingRightImage"/>
+						The first pattern that comes to mind is the typical <strong>head-to-toe pattern</strong> where 
+						the pennies are stacked in a grid-like manner.
+					</p>
+					<p class="clearRight">
+						<img src="../resources/img/pennies-stagard.png" alt="pennies-stagard" width="200" height="176" class="floatingRightImage" />
+						The second pattern that comes to mind is a <strong>staggered pattern</strong> where the pennies
+						are shifted to the right a half a penny in width. Although this pattern does sacrifice pennies
+						at the edges, it does allow more pennies to be stacked overall. This 
+						can easily be seen by counting the full pennies in each image to the right. The staggered
+						image has <strong>33</strong> pennies where the typical head-to-toe pattern only has <strong>30</strong>.
+					</p> 
+				</li>
+				<li>
+					<h2>Step Five</h2>
+					<h3>Determine the calculation method.</h3>
+					<p>
+						Using the staggered pattern, it is more difficult to calculate how many pennies
+						fill a specific area. With the head-to-toe pattern, it would only be necessary to calculate
+						how many pennies can fill a 1 x 1 ft. square (16 x 16 pennies = 256). Then I would be able
+						to easily calculate the total number of pennies using the total area of the bridge
+						(8,981 ft. x 90 ft. = 808,290 sq. ft. x 256 pennies / sq. ft. = 206,922,240 pennies).
+					</p>
+					<p>
+						But since I'm a perfectionist and have wanted to get the attention of IGN for a long time,
+						that just wasn't good enough for me. I decided that it would be best to calculate how many
+						pennies could fit into each "type" of row: the foundational row and the staggered row. 
+					</p>
+					<p>
+						From there I could determine how many "sets" of rows could fit lengthwise across the bridge.
+					</p>
+				</li>
+				<li>
+					<h2>Step Six</h2>
+					<h3>Time to calculate.</h3>
+					<p>
+						With the width of the bridge being an exact 90 ft., it's easy to determine how many pennies
+						could fit in the first row. <strong>90 ft. x 12 in. = 1,080 inches wide.</strong> It's
+						also convenient that a penny is 0.750 inches in diameter. You divide the total
+						width of the bridge by the diameter of a penny to determine how many pennies in length each
+						row will be: <strong>1,080 in. / 0.750 in. = 1,440 pennies in the first row.</strong>
+					</p>
+					<p>
+						Now, the staggered row has a slight indentation on either side- exactly the width of 1 penny.
+						So we know that the staggered row will have <strong>1,439 pennies.</strong> Together, these
+						two rows will have a total of <strong>2,879 pennies.</strong>
+					</p>
+					<p>
+						When you use the staggered stacking method, these two rows together become 35.5 mm. in height.
+						Using the 1 mm. = 0.0393700787 in. conversion, we can determine the height of these rows in
+						inches: <strong>35.5 mm. + 0.0393700787 in. = 1.39763779385 in.</strong>
+					</p>
+					<p>
+						Then, all we have to do is determine how many of these rows will fit length wise across the
+						bridge. The bridge is 8,981 ft. long, which is equivalent to 107,772 inches. So, we can determine
+						this by calculating <strong>107,772 in. / 1.39763779385 in. = 77,110.107120905830 "sets" of rows.</strong>
+					</p>
+					<p>
+						We'll ignore the decimal point here (if it was over .5 we'd be able to fit a half of one "set" of rows).
+						This allows us to make the final calculation of <strong>77,110 "sets" of rows x 2,879 pennies per "set" row =
+						221,970,900</strong>
+					</p>
+					<p>
+						<strong>You could fit 221,970,900 pennies on the Golden Gate Bridge without any of them overlapping.</strong>
+					</p>
+				</li>
+			</ul>
+			<ul id="nextPrevButtons">
+				<li id="next"><a href="../2/index.html" class="navigationButton">Next &raquo;</a></li>
+				<li id="previous"><a href="../index.html" class="navigationButton">&laquo; Previous</a></li>
+			</ul>
+			<div class="clearBoth"></div>
+		</div>
+	</div>
+	
+	<div id="footer" class="window">
+	    <div class="frame">
+	    	<h2>Everything</h2>
+	    	<span>
+	    		You see here was solely designed and developed by <img src="../resources/img/adam-passey-logo-white-sm.png" alt="adam-passey-logo-white-sm" width="163" height="56" /><br />
+	    		for the IGN Code Foo Challenge.
+	    	</span>
+	    	<div class="clearBoth"></div>
+	    </div>
+	</div>
+	
+	</body>
+</html>
